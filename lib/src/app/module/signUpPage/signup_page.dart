@@ -13,7 +13,8 @@ class SignUpPage extends StatelessWidget {
     return StandardPage(
         body: Column(children: [
       StandardLogo(
-        espaco: 20,
+        espacoCima: 60,
+        espacoBaixo: 40,
       ),
       Column(
         crossAxisAlignment: CrossAxisAlignment.start,

@@ -4,14 +4,16 @@ import 'package:scannia/src/app/components/images/standard_images.dart';
 
 class StandardCard extends StatelessWidget {
   final ProdutoServico produtoServico;
-  StandardCard({required this.produtoServico});
+  final Function()? onPressed;
+
+  StandardCard({required this.produtoServico, required this.onPressed});
   @override
   Widget build(BuildContext context) {
     return Container(
         height: 120.0,
         margin: const EdgeInsets.only(top: 16.0, bottom: 8.0),
         child: TextButton(
-            onPressed: () {},
+            onPressed: onPressed,
             child: Stack(children: <Widget>[
               Container(
                 margin: const EdgeInsets.only(left: 72.0, right: 24.0),

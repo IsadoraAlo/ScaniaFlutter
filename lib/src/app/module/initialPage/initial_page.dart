@@ -17,7 +17,8 @@ class InitialPage extends StatelessWidget {
           height: 50.0,
         ),
         StandardLogo(
-          espaco: 0,
+          espacoCima: 100,
+          espacoBaixo: 0,
         ),
         StandardFont(
           alinhamento: TextAlign.center,

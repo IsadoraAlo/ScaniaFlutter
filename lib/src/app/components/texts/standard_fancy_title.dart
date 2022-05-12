@@ -12,6 +12,7 @@ class StandardTitle extends StatelessWidget {
           const Expanded(
               child: Divider(
             color: Colors.white,
+            thickness: 1,
             endIndent: 10,
           )),
           Text(
@@ -24,6 +25,7 @@ class StandardTitle extends StatelessWidget {
           const Expanded(
               child: Divider(
             color: Colors.white,
+            thickness: 1,
             indent: 10,
           )),
         ]));

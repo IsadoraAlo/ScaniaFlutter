@@ -16,7 +16,8 @@ class LoginPage extends StatelessWidget {
     return StandardPage(
         body: Column(children: [
       StandardLogo(
-        espaco: 40,
+        espacoCima: 60,
+        espacoBaixo: 40,
       ),
       Column(
         crossAxisAlignment: CrossAxisAlignment.start,
