@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:scannia/src/app/components/buttons/standard_button.dart';
-import 'package:scannia/src/app/components/texts/standard_font.dart';
-import 'package:scannia/src/app/components/inputs/standard_input.dart';
-import 'package:scannia/src/app/components/images/standard_logo.dart';
-import 'package:scannia/src/app/components/pages/standard_page.dart';
-import 'package:scannia/src/app/module/loginPage/login_page.dart';
-import 'package:scannia/src/utils/export.dart';
+import 'package:scania/src/app/components/buttons/standard_button.dart';
+import 'package:scania/src/app/components/texts/standard_font.dart';
+import 'package:scania/src/app/components/inputs/standard_input.dart';
+import 'package:scania/src/app/components/images/standard_logo.dart';
+import 'package:scania/src/app/components/pages/standard_page.dart';
+import 'package:scania/src/app/module/loginPage/login_page.dart';
+import 'package:scania/src/utils/export.dart';
 
 class SignUpPage extends StatelessWidget {
   @override

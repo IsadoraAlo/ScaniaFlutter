@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:scannia/src/app/model/produto_servico.dart';
-import 'package:scannia/src/app/components/texts/standard_icon_text.dart';
-import 'package:scannia/src/utils/export.dart';
-import 'package:scannia/src/app/components/appBar/standard_bar.dart';
-import 'package:scannia/src/app/components/texts/standard_font.dart';
-import 'package:scannia/src/app/module/homePage/home_page.dart';
-import 'package:scannia/src/app/components/texts/standard_text.dart';
-import 'package:scannia/src/app/components/images/standard_logo.dart';
+import 'package:scania/src/app/model/produto_servico.dart';
+import 'package:scania/src/app/components/texts/standard_icon_text.dart';
+import 'package:scania/src/utils/export.dart';
+import 'package:scania/src/app/components/appBar/standard_bar.dart';
+import 'package:scania/src/app/components/texts/standard_font.dart';
+import 'package:scania/src/app/module/homePage/home_page.dart';
+import 'package:scania/src/app/components/texts/standard_text.dart';
+import 'package:scania/src/app/components/images/standard_logo.dart';
 
 class ContentPage extends StatelessWidget {
   final ProdutoServico produtoServico;
@@ -48,7 +48,7 @@ class ContentPage extends StatelessWidget {
                     tamanho: 25,
                     espaco: 8),
                 StandardIconText(
-                    espacamentoTextos: 177,
+                    espacamentoTextos: 165,
                     produtoServico: produtoServico,
                     tamanhoFontes: 20,
                     tamanhoIcones: 20),

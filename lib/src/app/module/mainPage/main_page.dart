@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:scannia/src/theme/app_theme.dart';
-import 'package:scannia/src/app/module/initialPage/initial_page.dart';
+import 'package:scania/src/theme/app_theme.dart';
+import 'package:scania/src/app/module/initialPage/initial_page.dart';
 
 class MyScaniaApp extends StatelessWidget {
   @override

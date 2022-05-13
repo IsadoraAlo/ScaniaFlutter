@@ -1,4 +1,4 @@
-import 'package:scannia/src/app/model/produto_servico.dart';
+import 'package:scania/src/app/model/produto_servico.dart';
 
 class ProdutosServicos {
   static final List<ProdutoServico> produtosServicos = [

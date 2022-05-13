@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:scania/src/app/module/homePage/home_page.dart';
 
 class StandardMediaButton extends StatelessWidget {
   final double espacoDireita;
@@ -18,7 +19,10 @@ class StandardMediaButton extends StatelessWidget {
         width: 180.0,
         padding: EdgeInsets.only(right: espacoDireita, left: espacoEsquerda),
         child: TextButton(
-          onPressed: () => {},
+          onPressed: () {
+            Navigator.push(
+                context, MaterialPageRoute(builder: (context) => HomePage()));
+          },
           style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all<Color>(Colors.white)),
           child: Row(

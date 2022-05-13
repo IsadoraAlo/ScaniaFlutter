@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:scannia/src/app/components/buttons/standard_card.dart';
-import 'package:scannia/src/app/components/pages/standard_page.dart';
-import 'package:scannia/src/app/model/produtos_servicos.dart';
-import 'package:scannia/src/app/components/pages/content_page.dart';
-import 'package:scannia/src/app/components/appBar/standard_bar.dart';
-import 'package:scannia/src/app/module/initialPage/initial_page.dart';
-import 'package:scannia/src/app/components/texts/standard_font.dart';
-import 'package:scannia/src/utils/export.dart';
+import 'package:scania/src/app/components/buttons/standard_card.dart';
+import 'package:scania/src/app/components/pages/standard_page.dart';
+import 'package:scania/src/app/model/produtos_servicos.dart';
+import 'package:scania/src/app/components/pages/content_page.dart';
+import 'package:scania/src/app/components/appBar/standard_bar.dart';
+import 'package:scania/src/app/module/initialPage/initial_page.dart';
+import 'package:scania/src/app/components/texts/standard_font.dart';
+import 'package:scania/src/utils/export.dart';
 
 class HomePage extends StatelessWidget {
   @override

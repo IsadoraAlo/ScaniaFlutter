@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scannia/src/utils/paddings.dart';
+import 'package:scania/src/utils/paddings.dart';
 
 class StandardPage extends StatelessWidget {
   final Widget body;

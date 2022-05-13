@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:scannia/src/app/components/images/standard_images.dart';
-import 'package:scannia/src/app/components/texts/standard_icon_text.dart';
-import 'package:scannia/src/app/components/texts/standard_text.dart';
-import 'package:scannia/src/app/model/produto_servico.dart';
+import 'package:scania/src/app/components/images/standard_images.dart';
+import 'package:scania/src/app/components/texts/standard_icon_text.dart';
+import 'package:scania/src/app/components/texts/standard_text.dart';
+import 'package:scania/src/app/model/produto_servico.dart';
 
 class StandardCard extends StatelessWidget {
   final ProdutoServico produtoServico;

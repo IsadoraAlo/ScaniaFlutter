@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:scannia/src/app/model/produto_servico.dart';
-import 'package:scannia/src/app/components/texts/standard_text.dart';
+import 'package:scania/src/app/model/produto_servico.dart';
+import 'package:scania/src/app/components/texts/standard_text.dart';
 
 class StandardIconText extends StatelessWidget {
   final ProdutoServico produtoServico;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scannia/src/app/model/produto_servico.dart';
+import 'package:scania/src/app/model/produto_servico.dart';
 
 class StandardImages extends StatelessWidget {
   final ProdutoServico produtoServico;

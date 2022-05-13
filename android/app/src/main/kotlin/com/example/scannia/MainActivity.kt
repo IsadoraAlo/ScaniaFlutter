@@ -1,4 +1,4 @@
-package com.example.scannia
+package com.example.scania
 
 import io.flutter.embedding.android.FlutterActivity
 
