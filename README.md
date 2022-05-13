@@ -1,4 +1,4 @@
-# scania
+# Scania
 
 A new Flutter project.
 
