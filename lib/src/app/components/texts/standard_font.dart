@@ -7,7 +7,7 @@ class StandardFont extends StatelessWidget {
   final double espaco;
   final Function()? onPressed;
 
-  StandardFont(
+  const StandardFont(
       {required this.alinhamento,
       required this.label,
       required this.tamanho,

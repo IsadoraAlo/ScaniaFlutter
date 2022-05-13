@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:scannia/src/app/model/produtoServico.dart';
+import 'package:scannia/src/app/model/produto_servico.dart';
 import 'package:scannia/src/app/components/texts/standard_text.dart';
 
 class StandardIconText extends StatelessWidget {
@@ -8,14 +8,14 @@ class StandardIconText extends StatelessWidget {
   final double tamanhoFontes;
   final double espacamentoTextos;
 
-  @override
-  StandardIconText({
+  const StandardIconText({
     required this.produtoServico,
     required this.tamanhoIcones,
     required this.tamanhoFontes,
     required this.espacamentoTextos,
   });
 
+  @override
   Widget build(BuildContext context) {
     return Row(
       children: <Widget>[

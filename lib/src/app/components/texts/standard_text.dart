@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:scannia/src/app/model/produtoServico.dart';
 
 class StandardText extends StatelessWidget {
   final double tamanhoFontes;
   final FontWeight espessuraFontes;
   final String label;
 
-  StandardText(
+  const StandardText(
       {required this.tamanhoFontes,
       required this.espessuraFontes,
       required this.label});

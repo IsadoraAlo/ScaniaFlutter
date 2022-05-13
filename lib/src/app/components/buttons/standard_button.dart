@@ -7,7 +7,7 @@ class StandardButton extends StatelessWidget {
   final Color fundo;
   final Color texto;
 
-  StandardButton(
+  const StandardButton(
       {required this.onPressed,
       required this.label,
       required this.fundo,
@@ -16,7 +16,7 @@ class StandardButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: EdgeInsets.only(
+        padding: const EdgeInsets.only(
           top: 20.0,
         ),
         child: SizedBox(
@@ -27,7 +27,7 @@ class StandardButton extends StatelessWidget {
                   backgroundColor: MaterialStateProperty.all<Color>(fundo),
                   foregroundColor: MaterialStateProperty.all<Color>(texto),
                   side: MaterialStateProperty.all<BorderSide>(
-                      BorderSide(width: 1.0, color: Colors.white))),
+                      const BorderSide(width: 1.0, color: Colors.white))),
               onPressed: onPressed,
               child: Text(label, textAlign: TextAlign.center),
             )));

@@ -12,4 +12,4 @@ ThemeData darkTheme = ThemeData(
       backgroundColor: Colors.black,
       iconTheme: IconThemeData(color: Colors.white),
     ),
-    scaffoldBackgroundColor: Color.fromARGB(255, 0, 0, 0));
+    scaffoldBackgroundColor: const Color.fromARGB(255, 0, 0, 0));

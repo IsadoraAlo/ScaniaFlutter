@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:scannia/src/app/components/buttons/standard_card.dart';
 import 'package:scannia/src/app/components/pages/standard_page.dart';
-import 'package:scannia/src/app/model/produtosServicos.dart';
+import 'package:scannia/src/app/model/produtos_servicos.dart';
 import 'package:scannia/src/app/components/pages/content_page.dart';
 import 'package:scannia/src/app/components/appBar/standard_bar.dart';
 import 'package:scannia/src/app/module/initialPage/initial_page.dart';
@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
           Navigator.push(
               context, MaterialPageRoute(builder: (context) => InitialPage()));
         },
-        title: StandardFont(
+        title: const StandardFont(
           alinhamento: TextAlign.center,
           label: scania,
           tamanho: 30,

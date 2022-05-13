@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:scannia/src/app/components/texts/standard_font.dart';
 
 class StandardBar extends StatelessWidget {
   final Function()? onPressed;
   final IconData icon;
-  Widget title;
+  final Widget title;
 
-  StandardBar(
+  const StandardBar(
       {required this.onPressed, required this.icon, required this.title});
 
   @override

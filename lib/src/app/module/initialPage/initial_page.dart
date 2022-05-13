@@ -16,11 +16,11 @@ class InitialPage extends StatelessWidget {
         const Divider(
           height: 50.0,
         ),
-        StandardLogo(
+        const StandardLogo(
           espacoCima: 100,
           espacoBaixo: 0,
         ),
-        StandardFont(
+        const StandardFont(
           alinhamento: TextAlign.center,
           label: scania,
           tamanho: 30.0,

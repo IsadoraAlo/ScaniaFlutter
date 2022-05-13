@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:scannia/src/app/components/images/standard_images.dart';
 import 'package:scannia/src/app/components/texts/standard_icon_text.dart';
 import 'package:scannia/src/app/components/texts/standard_text.dart';
-import 'package:scannia/src/app/model/produtoServico.dart';
+import 'package:scannia/src/app/model/produto_servico.dart';
 
 class StandardCard extends StatelessWidget {
   final ProdutoServico produtoServico;
   final Function()? onPressed;
 
-  StandardCard({required this.produtoServico, required this.onPressed});
+  const StandardCard({required this.produtoServico, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {

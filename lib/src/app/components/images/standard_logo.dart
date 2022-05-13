@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 class StandardLogo extends StatelessWidget {
   final double espacoBaixo;
   final double espacoCima;
-  StandardLogo({
+
+  const StandardLogo({
     required this.espacoBaixo,
     required this.espacoCima,
   });

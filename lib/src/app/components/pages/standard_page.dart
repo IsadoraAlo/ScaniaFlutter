@@ -4,7 +4,7 @@ import 'package:scannia/src/utils/paddings.dart';
 class StandardPage extends StatelessWidget {
   final Widget body;
 
-  StandardPage({
+  const StandardPage({
     required this.body,
   });
 

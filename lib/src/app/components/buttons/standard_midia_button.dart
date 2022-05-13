@@ -6,7 +6,7 @@ class StandardMediaButton extends StatelessWidget {
   final String label;
   final int iconCode;
 
-  StandardMediaButton(
+  const StandardMediaButton(
       {required this.espacoDireita,
       required this.espacoEsquerda,
       required this.label,

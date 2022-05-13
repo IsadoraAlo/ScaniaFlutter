@@ -12,7 +12,7 @@ class SignUpPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return StandardPage(
         body: Column(children: [
-      StandardLogo(
+      const StandardLogo(
         espacoCima: 60,
         espacoBaixo: 40,
       ),
@@ -20,7 +20,7 @@ class SignUpPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          StandardFont(
+          const StandardFont(
             alinhamento: TextAlign.left,
             label: email,
             tamanho: 15,
@@ -33,7 +33,7 @@ class SignUpPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          StandardFont(
+          const StandardFont(
             alinhamento: TextAlign.left,
             label: password,
             tamanho: 15,
@@ -46,7 +46,7 @@ class SignUpPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          StandardFont(
+          const StandardFont(
             alinhamento: TextAlign.left,
             label: confirmPassword,
             tamanho: 15,

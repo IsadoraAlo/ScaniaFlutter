@@ -15,7 +15,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return StandardPage(
         body: Column(children: [
-      StandardLogo(
+      const StandardLogo(
         espacoCima: 60,
         espacoBaixo: 40,
       ),
@@ -23,7 +23,7 @@ class LoginPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          StandardFont(
+          const StandardFont(
             alinhamento: TextAlign.left,
             label: email,
             tamanho: 15,
@@ -36,7 +36,7 @@ class LoginPage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          StandardFont(
+          const StandardFont(
             alinhamento: TextAlign.left,
             label: password,
             tamanho: 15,
@@ -72,10 +72,10 @@ class LoginPage extends StatelessWidget {
         fundo: Colors.white,
         texto: Colors.black,
       ),
-      StandardTitle(
+      const StandardTitle(
         label: connectWith,
       ),
-      Row(children: [
+      Row(children: const [
         StandardMediaButton(
           espacoDireita: 5,
           espacoEsquerda: 0,
