@@ -12,9 +12,8 @@ class StandardPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: EdgeInsets.only(
-          left: AppPaddings.borderPadding,
-          right: AppPaddings.borderPadding,
+        padding: EdgeInsets.symmetric(
+          horizontal: AppPaddings.borderPadding,
         ),
         child: SingleChildScrollView(child: body),
       ),

@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:scannia/src/app/model/produtoServico.dart';
-import 'package:scannia/src/app/components/images/standard_images.dart';
+import 'package:scannia/src/app/components/texts/standard_icon_text.dart';
 import 'package:scannia/src/utils/export.dart';
+import 'package:scannia/src/app/components/appBar/standard_bar.dart';
+import 'package:scannia/src/app/components/texts/standard_font.dart';
+import 'package:scannia/src/app/module/homePage/home_page.dart';
+import 'package:scannia/src/app/components/texts/standard_text.dart';
 
 class ContentPage extends StatelessWidget {
   final ProdutoServico produtoServico;
@@ -12,41 +16,49 @@ class ContentPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
-      Row(
-        children: <Widget>[
-          StandardImages(
-            produtoServico: produtoServico,
-          ),
-          const Icon(Icons.star_sharp, size: 14.0, color: Colors.white),
-          Text(produtoServico.avaliacao,
-              style: const TextStyle(
-                  fontWeight: FontWeight.w300,
-                  fontSize: 12.0,
-                  color: Colors.white)),
-          Container(width: 24.0),
-          const Icon(Icons.account_box, size: 14.0, color: Colors.white),
-          Text(produtoServico.tipo,
-              style: const TextStyle(
-                  fontWeight: FontWeight.w300,
-                  fontSize: 12.0,
-                  color: Colors.white)),
-        ],
-      ),
-      Container(
-          color: Colors.white,
-          width: 400.0,
-          height: 1.0,
-          margin: const EdgeInsets.symmetric(vertical: 8.0)),
-      Row(
-        children: const <Widget>[
-          Text(about,
-              style: TextStyle(
-                  fontWeight: FontWeight.w300,
-                  fontSize: 12.0,
-                  color: Colors.white))
-        ],
-      )
-    ]);
+    return Scaffold(
+        appBar: PreferredSize(
+            preferredSize: const Size(double.infinity, kToolbarHeight),
+            child: StandardBar(
+              icon: Icons.arrow_back,
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => HomePage()));
+              },
+              title: StandardFont(
+                alinhamento: TextAlign.center,
+                label: ' ',
+                tamanho: 0,
+                espaco: 0,
+              ),
+            )),
+        body: Padding(
+            padding: EdgeInsets.symmetric(
+              horizontal: AppPaddings.borderPadding,
+            ),
+            child: Column(
+              mainAxisSize: MainAxisSize.max,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                StandardIconText(
+                    espacamentoTextos: 177,
+                    produtoServico: produtoServico,
+                    tamanhoFontes: 20,
+                    tamanhoIcones: 20),
+                Container(
+                    color: Colors.white,
+                    width: 350.0,
+                    height: 1.0,
+                    margin: const EdgeInsets.symmetric(vertical: 8.0)),
+                Row(
+                  children: <Widget>[
+                    StandardText(
+                        tamanhoFontes: 12,
+                        espessuraFontes: FontWeight.w300,
+                        label: about)
+                  ],
+                )
+              ],
+            )));
   }
 }

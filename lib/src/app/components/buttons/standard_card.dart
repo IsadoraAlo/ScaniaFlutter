@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:scannia/src/app/model/produtoServico.dart';
 import 'package:scannia/src/app/components/images/standard_images.dart';
+import 'package:scannia/src/app/components/texts/standard_icon_text.dart';
+import 'package:scannia/src/app/components/texts/standard_text.dart';
+import 'package:scannia/src/app/model/produtoServico.dart';
 
 class StandardCard extends StatelessWidget {
   final ProdutoServico produtoServico;
   final Function()? onPressed;
 
   StandardCard({required this.produtoServico, required this.onPressed});
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -34,39 +37,24 @@ class StandardCard extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Text(produtoServico.nome,
-                          style: const TextStyle(
-                              fontWeight: FontWeight.w600,
-                              fontSize: 24.0,
-                              color: Colors.white)),
-                      Text(produtoServico.avaliacao,
-                          style: const TextStyle(
-                              fontWeight: FontWeight.w300,
-                              fontSize: 14.0,
-                              color: Colors.white)),
+                      StandardText(
+                          tamanhoFontes: 24,
+                          espessuraFontes: FontWeight.w600,
+                          label: produtoServico.nome),
+                      StandardText(
+                          tamanhoFontes: 14,
+                          espessuraFontes: FontWeight.w300,
+                          label: produtoServico.setor),
                       Container(
                           color: Colors.white,
                           width: 24.0,
                           height: 1.0,
                           margin: const EdgeInsets.symmetric(vertical: 8.0)),
-                      Row(
-                        children: <Widget>[
-                          const Icon(Icons.star_sharp,
-                              size: 14.0, color: Colors.white),
-                          Text(produtoServico.avaliacao,
-                              style: const TextStyle(
-                                  fontWeight: FontWeight.w300,
-                                  fontSize: 12.0,
-                                  color: Colors.white)),
-                          Container(width: 24.0),
-                          const Icon(Icons.account_box,
-                              size: 14.0, color: Colors.white),
-                          Text(produtoServico.tipo,
-                              style: const TextStyle(
-                                  fontWeight: FontWeight.w300,
-                                  fontSize: 12.0,
-                                  color: Colors.white)),
-                        ],
+                      StandardIconText(
+                        produtoServico: produtoServico,
+                        espacamentoTextos: 24,
+                        tamanhoFontes: 16,
+                        tamanhoIcones: 18,
                       )
                     ],
                   ),
